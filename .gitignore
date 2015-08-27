@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+.*.swp
+gerrit_reviewer.log*
+config.json
+gerrit_review.pid
+gerrit_review.out
+Crypto/
