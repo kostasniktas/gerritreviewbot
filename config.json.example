@@ -1,0 +1,21 @@
+{
+  "gitrepos" : {
+    "special/repo" : {
+      "path" : "/home/kniktas/git/special_repo"
+    }
+  },
+  "gitremote" : "origin",
+  "username" : "kniktas",
+  "keyfile" : "/home/kniktas/.ssh/id-rsa",
+  "hostname" : "gerrit.example.local",
+  "addreviewers" : true,
+  "addcomment" : true,
+  "sendemails" : true,
+  "debuglogging" : false,
+  "timeoutfetch" : 120,
+  "mergereviewers": ["user1"],
+  "smtpserver": "smtp.myserver.example",
+  "emailfrom": "no-reply@example.com",
+  "ignoredcomponents": ["foo", "bar"],
+  "usersemaildomain": "example.com"
+}

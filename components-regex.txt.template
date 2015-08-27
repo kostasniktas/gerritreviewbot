@@ -1,0 +1,31 @@
+#
+# A listing of the components in the repo and their owners
+#
+# Components are listed by priority.  This means that it will pick the first match.
+#
+# More readable names like "Code Editor" are preferred over "CodeEditor". There must be a
+#   blank line between different components.
+#
+# Owners are listed next to the components in parenthesis. Owners are listed by degree of ownership.
+# The first listed owner is the primary contact, the second is the first backup, etc...
+#
+# If owners are placed in parentheses ( ), then only one of the owners is added as part of the review
+#
+# If owners are placed in square brackets [ ], then ALL the owners are added as part of the review.
+#
+# Prepend a component name with NORMAL or HIGH
+#   Setting a component to HIGH means that those components should always be reviewed (mandatory)
+#   Setting a component to NORMAL means that the components are reviewed when requested (w/ AUTOREVIEW)
+#
+# Setting the author to 'ignored' means that we wouldn't add a reviewer for a file.  This is useful
+#  if you are listed for a component or package but don't want to be added for auto-generated files.
+#
+# For regex information, check out the Python 2.6 docs for regex
+#   http://docs.python.org/release/2.6.5/library/re.html
+#   http://docs.python.org/release/2.6.5/howto/regex.html
+# To match, we use the re.search function.
+#   http://docs.python.org/release/2.6.5/library/re.html#re.search
+#   re.search(regex_pattern, filename)
+#   It's a match if the result of the function is not None
+#
+#

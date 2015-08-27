@@ -1,0 +1,26 @@
+Gerrit Review Bot
+
+Requirements:
+  -Python >= 2.6
+  -Necessary git repos to watch
+  -SSH key & username with access to git repo
+  -'git fetch' should work on that repo (ssh-agent, etc. etc.)
+
+
+1. You need to build PyCrypto 2.1.0 on the machine it will run
+    http://pypi.python.org/pypi/pycrypto/2.1.0
+    python setup.sy build
+2. Copy the Crypto folder in build/lib*/ to the gerritreview folder
+    (the path will depend on what version of python and what OS)
+3. Copy gerrit_reviewer.json.example to gerrit_reviewer.json and set the values
+4. python gerrit2.py CONFIGJSONFILE
+
+
+To Run:
+gerrit_review.sh => Will run the reviewer in an infinite loop.  Stays in foreground
+daemon_gerritreview.sh => Runs gerrit_review with nohup and places it in the background.  Run it will the kill argument to properly kill the reviewer
+  - Using the script's kill argument is preferred since it uses the group process ID.  Otherwise, the infinite loop will be killed but no the python script.
+
+Note: By default, gerrit_review.sh will use python2.6 to run the script.  If you'd like ot run it with a different python executable,
+  set the environment variable $PYTHON_EXEC:
+     ~ $> PYTHON_EXEC=python2.7 ./daemon_gerritreview.sh
